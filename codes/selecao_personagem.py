@@ -13,7 +13,7 @@ def tela_selecao_personagem(tela_logica, tela_real):
     # fonte_nome = pygame.font.Font(None, 40) # Não é mais necessária
 
     try:
-        fundo_img = pygame.image.load('fundo_selecao.png').convert()
+        fundo_img = pygame.image.load('sprites/fundo_selecao.png').convert()
         fundo_img = pygame.transform.scale(fundo_img, (largura, altura))
     except pygame.error as e:
         print(f"Erro ao carregar imagem de fundo da seleção: {e}")

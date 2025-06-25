@@ -12,7 +12,7 @@ def tela_de_menu(tela_logica, tela_real):
     raio_borda = 15
 
     try:
-        fundo_menu_img = pygame.image.load('fundo_menu.png').convert()
+        fundo_menu_img = pygame.image.load('sprites/fundo_menu.png').convert()
         fundo_menu_img = pygame.transform.scale(fundo_menu_img, (largura, altura))
     except pygame.error as e:
         print(f"Erro ao carregar fundo do menu: {e}")

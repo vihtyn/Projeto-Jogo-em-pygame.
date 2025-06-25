@@ -8,15 +8,15 @@ def tela_selecao_mapa(tela_logica, tela_real):
     fonte_titulo = pygame.font.Font(None, 74); fonte_nome = pygame.font.Font(None, 30)
 
     try:
-        fundo_img = pygame.image.load('fundo_mapa.png').convert()
+        fundo_img = pygame.image.load('sprites/fundo_mapa.png').convert()
         fundo_img = pygame.transform.scale(fundo_img, (largura, altura))
     except pygame.error as e:
         print(f"Erro ao carregar fundo da seleção de mapa: {e}"); fundo_img = None
 
     mapas = [
-        {"nome": "Floresta Verde", "thumb_path": "cenario_floresta.jpg", "bg_path": "cenario_floresta.jpg"},
-        {"nome": "Montanhas Nevadas", "thumb_path": "cenario_gelo.jpg", "bg_path": "cenario_gelo.jpg"},
-        {"nome": "Deserto", "thumb_path": "cenario_deserto.jpg", "bg_path": "cenario_deserto.jpg"}
+        {"nome": "Floresta Verde", "thumb_path": "sprites/cenario_floresta.jpg", "bg_path": "sprites/cenario_floresta.jpg"},
+        {"nome": "Montanhas Nevadas", "thumb_path": "sprites/cenario_gelo.jpg", "bg_path": "sprites/cenario_gelo.jpg"},
+        {"nome": "Deserto", "thumb_path": "sprites/cenario_deserto.jpg", "bg_path": "sprites/cenario_deserto.jpg"}
     ]
 
     itens_selecao = []
